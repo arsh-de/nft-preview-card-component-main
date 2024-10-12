@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-body: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font: Outfit, Sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font);
+    background-color: var(--Very-dark-blue-body);
+}
+
+.nft-card {
+    padding: 1.5rem;
+    background-color: var(--Very-dark-blue-card);
+    max-width: 350px;
+    border-radius: 1rem;
+}
+
+.nft-image {
+    background: url(images/image-equilibrium.jpg) no-repeat center/cover;
+    height: 300px;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.nft-heading {
+    color: var(--White);
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nft-goal {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    color: var(--Soft-blue);
+}
+
+.nft-priceInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.nft-price {
+    color: var(--Cyan);
+    font-weight: 700;
+    display: flex;
+}
+
+.nft-saleTime {
+    display: flex;
+    color: var(--Soft-blue);
+}
+
+.nft-priceInfo>div {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+
+.nft-priceInfo>div>img {
+    height: 1.2rem;
+}
+
+.nft-profile {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nft-avatar {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.nft-creator-1 {
+    color: var(--Soft-blue);
+    padding-right: .2rem;
+    font-weight: 400;
+}
+
+.nft-creator-2 {
+    color: var(--White);
+    font-weight: 400;
+}
